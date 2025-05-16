@@ -30,9 +30,21 @@ const LoginForm:React.Fc<LoginFromProps> = ({onLogin}) =>{
                 className="border p-3 rounded w-full mb-6"
                 />
                 <input
-                ty
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e)=>setPassword(e.target.value)}
+                className="border p-3 rounded w-full mb-6"/>
+                <button
+                type="submit"
+                className="bg-blue-500 text-white p-3 w-full rounded hover:bg-blue-600"
+                >
+                    Login
+                </button>
             </form>
         </div>
 
     )
 }
+
+export default LoginForm;

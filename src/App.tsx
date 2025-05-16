@@ -1,8 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import React, from 'react'
+import LoginForm from './Components/LoginForm'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App:React.FC=()=>{
+  const handleLogin=(email:string, password:string)=>{
+
+  }
+}
+
+
 
   return (
     <>
